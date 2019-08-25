@@ -1,0 +1,322 @@
+@import url("pc.less");
+
+@media (max-width: 959px) {
+  .container {
+    width: 100vw;
+    .red,.blue {
+      padding: 0;
+      background-image: none;
+    }
+    .pc {
+      display: none;
+    }
+    .mobile {
+      display: block;
+    }
+    .menu {
+      margin-bottom: 0;
+      padding: 0 24px;
+      .mobile-menu {
+        float: right;
+        height: 64px;
+        line-height: 64px;
+        transition: all 1s;
+        img {
+          width: 21px;
+          transform: rotateX(180deg);
+        }
+      }
+      .close {
+        img {
+          transform: rotateX(0);
+        }
+      }
+      .menu-list {
+        position: absolute;
+        z-index: 5;
+        top: 64px;
+        display: none;
+        background: #fff;
+        width: 100vw;
+        left: 0;
+        li {
+          float: none;
+          display: block;
+          height: 48px;
+          line-height: 48px;
+          margin: 0 24px;
+          padding: 0;
+          text-align: center;
+          border-top: 1px solid rgba(0, 0, 0, .12);
+          div {
+            width: 100px;
+            display: inline-block;
+            text-align: left;
+          }
+          img {
+            width: 32px;
+          }
+        }
+      }
+    }
+    .pagination {
+      width: 100%;
+      .btn-prev, .btn-next {
+        width: 58px;
+        height: 26px;
+        line-height: 26px;
+        text-align: center;
+        font-family: 'AlibabaPuHuiTi-Regular';
+        font-size: 14px;
+        background: rgba(216, 216, 216, .3);
+        margin-right: 0;
+      }
+      .btn-prev {
+        float: left;
+      }
+      .btn-next {
+        float: right;
+      }
+      .disabled {
+        font-family: 'AlibabaPuHuiTi-Light';
+        opacity: .2;
+      }
+    }
+    .team-banner, .hire-banner {
+      margin-bottom: 24px;
+      .banner-title-wrapper,.banner-text {
+        left: 0;
+        padding-left: 24px;
+      }
+      img {
+        width: 100vw;
+        height: auto;
+      }
+    }
+    .team-banner {
+      .banner-text {
+        width: 245px;
+      }
+    }
+    .hire-banner {
+      .banner-text {
+        width: 188px;
+      }
+    }
+    .footer-banner {
+      margin-bottom: 0;
+      .banner-title-wrapper {
+        left: 24px;
+      }
+      img {
+        width: auto;
+        height: 218px;
+      }
+      .swiper-pagination {
+        padding-left: 24px;
+      }
+      .swiper-slide {
+        .banner-title-wrapper {
+          left: 24px;
+          top: 32px;
+          padding-right: 24px;
+        }
+      }
+    }
+    .footer {
+      margin: 0 24px;
+      padding: 0;
+      font-size: 12px;
+      .contact, .copyright {
+        float: none;
+        width: 100%;
+      }
+      .copyright {
+        margin-bottom: 32px;
+      }
+      .icon {
+        float: left;
+      }
+      .link {
+        margin-right: -20px;
+      }
+      .icon, .link {
+        height: 54px;
+        line-height: 54px;
+      }
+      .contact {
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        margin-bottom: 20px;
+        a {
+          height: 54px;
+          line-height: 54px;
+        }
+        .weibo, .weixin {
+          height: 54px;
+        }
+      }
+    }
+    .home-container {
+      .home-banner {
+        margin-bottom: 24px;
+        img {
+          width: 100%;  
+        }
+        .text {
+          top: 50%;
+          margin-top: -24px;
+          .title {
+            font-size: 26px;
+            word-spacing: 0;
+          }
+          .subtitle {
+            font-size: 12px;
+            width: 256px;
+            word-spacing: 0.3px;
+          }
+        }
+      }
+      .intro,.history {
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+      }
+      .intro,.history,.report {
+        margin: 0 24px 32px 24px; 
+      }
+      .intro {
+        .intro-content-wrapper {
+          margin-top: 34px;
+          ul {
+            margin-top: 40px;
+          }
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+      .intro-content-wrapper, .history-content-wrapper, .report-content-wrapper {
+        margin-left: 0;
+      }
+      .history-list {
+        li {
+          .content {
+            width: 270px;
+          }
+        }
+      }
+      .report-list li .content {
+        width: 240px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 22px;
+        white-space: nowrap;
+      }
+      .report-footer {
+        .pagination, .contact {
+          float: none;
+        }
+        .contact {
+          margin-top: 24px;
+        }
+      }
+    }
+    .team-container {
+      .team, .quote {
+        overflow-x: hidden; 
+        padding: 0 24px;
+      }
+      .quote {
+        .text {
+          font-size: 20px;
+          line-height: 27px;
+        }
+      }
+      .team .member-list {
+        margin-top: 32px;
+        margin-right: 0;
+        li {
+          float: none;
+          margin: 0 auto;
+          margin-bottom: 32px;
+        }
+      }
+    }
+    .hire-container {
+      .welfare, .job {
+        overflow-x: hidden; 
+        margin: 0 24px;
+      }
+      .welfare {
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        .welfare-list {
+          margin-top: 24px;
+          margin-left: 0;
+          padding-bottom: 8px;
+          li {
+            margin-bottom: 32px;
+          }
+        }
+        .welfare-desc {
+          margin-top: 6px;
+          margin-left: 0;
+          margin-bottom: 48px;
+          font-size: 14px;
+          line-height: 36px;
+          color: #0C1116;
+        }
+      }
+      .job {
+        margin-top: 32px;
+        .filter, .job-list, .job-footer {
+          margin-left: 0;
+        }
+        .site-list {
+          float: left;
+          a img{
+            margin-right: 12px;
+          }
+        }
+        .job-list {
+          .position, .address {
+            display: none;
+          }
+          .job-brief {
+            .name {
+              width: 200px;
+              float: left;
+            }
+            .operation {
+              float: right;
+            }
+          }
+          .job-brief::after {
+            display: block;
+            content: "";
+            clear: both;
+          }
+        }
+        .job-footer {
+          .contact {
+            float: left;
+            margin: 24px 0;
+          }
+        }
+      }
+    }
+    .contact-container {
+      .contact-banner {
+        .contact-zone {
+          left: 24px;
+        }
+        .address {
+          left: 24px;
+        }
+      }
+      .contact-content {
+        margin: 32px 24px 0 24px;
+        .title-wrapper {
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+}
